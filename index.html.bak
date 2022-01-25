@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" > -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+
+    <!-- star setting Bar -->
+    <div class="sett-bar">
+        <div class="config">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3>Settings</h3>
+        <div class="cards">
+            <div class="color-setting card">
+                <h4>color setting</h4>
+                <ul>
+                    <li data-color="#ff9d00"></li>
+                    <li data-color="#10CAB7"></li>
+                    <li data-color="#107dca"></li>
+                    <li class="active" data-color="#00C7FC"></li>
+                </ul>
+            </div>
+            <div class="back-set card parent-back">
+                <h4>Background Setting</h4>
+                <button class="random active select" data-status="random">Random</button>
+                <button class="fix select" data-status="fix">Fix</button>
+                <div class="select-div">
+                    <i class="fas fa-arrow-left move next"></i>
+                    <button class="select sel-user" data-status="select">select</button>
+                    <i class="fas fa-arrow-right move prev"></i>
+                </div>
+            </div>
+    
+            <!-- setting of nav-bullets -->
+            <div class="nav-bul-set card">
+                <h4>show bullets at Right</h4>
+                <button class="yes">Yes</button>
+                <button class="no active">No</button>
+            </div>
+    
+            <div class="reset card">
+                <button>Reset Setting</button>
+            </div>
+        </div>
+        
+
+    </div>
+    <!-- end setting Bar -->
+
+    <!-- star navigation bullets -->
+    <div class="nav-bul">
+        <ul>
+            <li data-section='.about-us'><span>About</span></li>
+            <li class="active" data-section='.skills'><span>Our Skills</span></li>
+            <li data-section='.gallery'><span>Gallery</span></li>
+            <li data-section='.features'><span>Our Features</span></li>
+            <li data-section='.testim'><span>Contact Me</span></li>
+        </ul>
+    </div>
+    <!-- end navigation bullets -->
+
+    <!-- star heading -->
+    <div class="header">
+        <div class="overlay"></div>
+        <div class="nav">
+            <div class="container">
+                <div class="logo">Special <span>Design</span></div>
+                <i class="fas fa-bars bar"></i>
+                <ul class="links">
+                    <i class="far fa-times close"></i>
+                    <li><a href="#" data-section='.about-us'>About</a></li>
+                    <li><a href="#" data-section='.skills'>Our Skills</a></li>
+                    <li><a href="#" data-section='.gallery'>Gallery</a></li>
+                    <li><a href="#" data-section='.features'>Our Features</a></li>
+                    <li><a href="#" data-section='.contact'>Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="landing">
+            <div class="container">
+                <h1>We Are <span>Creative</span> Agency</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium neque facilis placeat vero.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end heading -->
+
+    <!-- star about us -->
+    <div class="about-us">
+        <div class="container">
+            <div class="text">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quia consectetur? Velit aliquid inventore ipsa nisi, quisquam itaque porro modi enim? Quisquam explicabo ad amet quia, cum laborum dolorum. Expedita?</p>
+            </div>
+            <div class="image">
+                <img src="images/about4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end about us -->
+
+    <!-- star skills -->
+    <div class="skills">
+        <div class="container">
+            <div class="text-head">
+                <h3>Our Skills</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nostrum numquam eaque explicabo necessitatibus reiciendis dolores? Quas exercitationem in neque doloribus.</p>
+            </div>
+             <div class="content">
+                <div class="image">
+                    <img src="images/skills.svg" alt="">
+                </div>
+                <div class="progress">
+                    <div class="box">
+                        <h4>HTML</h4>
+                        <div class="value">
+                            <span data-progress="60%"></span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>Css</h4>
+                        <div class="value">
+                            <span data-progress="80%"></span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h4>JavaScript</h4>
+                        <div class="value">
+                            <span data-progress="70%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end skills -->
+
+    <!-- star garllery -->
+    <div class="gallery">
+        <div class="container">
+            <div class="text-head">
+                <h3>Gallery</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda nisi eligendi suscipit, non quae culpa molestias? Deserunt.</p>
+            </div>
+            <div class="images">
+                <div class="image-box">
+                    <img src="images/g1.jpg" alt="">
+                    <div class="img-text">
+                        Click to show more details
+                    </div>
+                    <div class="pop-text">
+                        <h4>Team Gallery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequuntur ex rerum quos sint ab</p>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="images/g2.jpg" alt="">
+                    <div class="img-text">
+                        Click to show more details
+                    </div>
+                    <div class="pop-text">
+                        <h4>Team Gallery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequuntur ex rerum quos sint ab</p>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="images/g3.jpg" alt="">
+                    <div class="img-text">
+                        Click to show more details
+                    </div>
+                    <div class="pop-text">
+                        <h4>Team Gallery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequuntur ex rerum quos sint ab</p>
+                    </div>
+                </div >
+                <div class="image-box">
+                    <img src="images/g4.jpg" alt="">
+                    <div class="img-text">
+                        Click to show more details
+                    </div>
+                    <div class="pop-text">
+                        <h4>Team Gallery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequuntur ex rerum quos sint ab</p>
+                    </div>
+                </div >
+                <div class="image-box">
+                    <img src="images/g5.jpg" alt="">
+                    <div class="img-text">
+                        Click to show more details
+                    </div>
+                    <div class="pop-text">
+                        <h4>Team Gallery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequuntur ex rerum quos sint ab</p>
+                    </div>
+                </div >
+                <div class="image-box">
+                    <img src="images/g6.jpg" alt="">
+                    <div class="img-text">
+                        Click to show more details
+                    </div>
+                    <div class="pop-text">
+                        <h4>Team Gallery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequuntur ex rerum quos sint ab</p>
+                    </div>
+                </div >
+                <div class="image-box">
+                    <img src="images/g7.jpg" alt="">
+                    <div class="img-text">
+                        Click to show more details
+                    </div>
+                    <div class="pop-text">
+                        <h4>Team Gallery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequuntur ex rerum quos sint ab</p>
+                    </div>
+                </div >
+                <div class="image-box">
+                    <img src="images/g9.jpg" alt="">
+                    <div class="img-text">
+                        Click to show more details
+                    </div>
+                    <div class="pop-text">
+                        <h4>Team Gallery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequuntur ex rerum quos sint ab</p>
+                    </div>
+                </div >
+            </div>
+        </div>
+    </div>
+    <!-- end garllery -->
+
+    <!-- star features -->
+    <div class="features">
+        <h2>Our Features</h2>
+        <div class="container">
+            <div class="feat-box">
+                <i class="far fa-magic"></i>
+                <h3>Cleane Code</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sit totam enim architecto suscipitluptas eum.</p>
+            </div>
+            <div class="feat-box">
+                <i class="fas fa-users"></i>
+                <h3>Cleane Code</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sit totam enim architecto suscipitluptas eum.</p>
+            </div>
+            <div class="feat-box">
+                <i class="far fa-gem"></i>
+                <h3>Cleane Code</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sit totam enim architecto suscipitluptas eum.</p>
+            </div>
+            <div class="feat-box">
+                <i class="far fa-tasks"></i>
+                <h3>Cleane Code</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sit totam enim architecto suscipitluptas eum.</p>
+            </div>
+            <div class="feat-box">
+                <i class="fas fa-sliders-h"></i>
+                <h3>Cleane Code</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sit totam enim architecto suscipitluptas eum.</p>
+            </div>
+            <div class="feat-box">
+                <i class="fad fa-calendar-alt"></i>
+                <h3>Cleane Code</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sit totam enim architecto suscipitluptas eum.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end features -->
+
+    <!-- star testimonials -->
+    <div class="testim">
+        <h2>Testimonials</h2>
+        <div class="content">
+            <div class="arrow left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="arrow right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="slid">
+                <div class="box">
+                    <i class="far fa-quote-right quote"></i>
+                    <div class="image">
+                        <img src="images/p1.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officiis? Ab alias corporis, accusamus architecto inventore quasi.</p>
+                    <h4>Ishaq</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="box active">
+                    <i class="far fa-quote-right quote"></i>
+                    <div class="image">
+                        <img src="images/p2.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officiis? Ab alias corporis, accusamus architecto inventore quasi.</p>
+                    <h4>Mohammed</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="far fa-quote-right quote"></i>
+                    <div class="image">
+                        <img src="images/p3.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officiis? Ab alias corporis, accusamus architecto inventore quasi.</p>
+                    <h4>Taqwa</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="far fa-quote-right quote"></i>
+                    <div class="image">
+                        <img src="images/p4.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officiis? Ab alias corporis, accusamus architecto inventore quasi.</p>
+                    <h4>Abderrazek</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="far fa-quote-right quote"></i>
+                    <div class="image">
+                        <img src="images/p5.png" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officiis? Ab alias corporis, accusamus architecto inventore quasi.</p>
+                    <h4>Salsabil</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- end testimonials -->
+
+    <!-- star contact -->
+    <div class="contact">
+        <div class="container">
+            <h2>Say Hello</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor, fugiat numquam.<br>Obcaecati dolor, fugiat numquam</p>
+            <form action="">
+                <input type="e-mail" name="email" placeholder="Your E-mail">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message">
+                <div class="social">
+                    <a href="https://web.facebook.com/abdou.sami.71697" target="_blank"><i class="fab fa-facebook-f "></i></a>
+                    <!-- <a href="https://twitter.com/AbdelwahabSami6"><i class="fab fa-twitter"></i></a> -->
+                    <a href="https://www.linkedin.com/in/badni-abdelwahab-b16ab1172" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/abdousami02" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- star footer -->
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2022 - <span>BadniTech</span> All Right Riserved</p>
+        </div>
+    </div>
+    <!-- end footer -->
+
+
+    <script src="js/master.js"></script>
+</body>
+</html>
